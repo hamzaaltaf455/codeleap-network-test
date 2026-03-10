@@ -1,0 +1,184 @@
+.app {
+  min-height: 100vh;
+  background-color: #dddddd;
+}
+
+.header {
+  background-color: #7695ec;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerInner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.headerTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main {
+  padding: 24px 0 48px;
+}
+
+.feed {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Create post card */
+.createCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.createTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fieldLabel {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #000000;
+  background: #ffffff;
+}
+
+.input::placeholder {
+  color: #cccccc;
+}
+
+.input:focus {
+  border-color: #7695ec;
+}
+
+.textarea {
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #000000;
+  background: #ffffff;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.textarea::placeholder {
+  color: #cccccc;
+}
+
+.textarea:focus {
+  border-color: #7695ec;
+}
+
+.createFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.createBtn {
+  background: #7695ec;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+
+.createBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.createBtn:not(:disabled):hover {
+  opacity: 0.85;
+}
+
+/* Feed status messages */
+.statusMessage {
+  text-align: center;
+  color: #777777;
+  font-size: 16px;
+  padding: 32px 0;
+}
+
+.errorMessage {
+  text-align: center;
+  color: #ff5c5c;
+  font-size: 16px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.retryBtn {
+  background: #7695ec;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.retryBtn:hover {
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .headerInner,
+  .feed {
+    padding: 0 16px;
+  }
+
+  .headerTitle {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  background-color: #dddddd;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #dddddd;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+}
